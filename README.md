@@ -1,10 +1,10 @@
-## Installation
+## 安装
 
 ```bash
 $ pnpm install
 ```
 
-## Running the app
+## 运行
 
 ```bash
 # development
@@ -15,6 +15,21 @@ $ pnpm run start:dev
 
 # production mode
 $ pnpm run start:prod
+```
+
+### docker 运行数据库
+```bash
+docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=test -d mysql:latest  
+
+mysql -u root -p   
+
+show databases;   
+
+use databases;   
+
+show tables;   
+
+select * from table_name;   
 ```
 
 ### 用户登陆
