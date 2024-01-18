@@ -44,7 +44,7 @@ curl http://localhost:3000/users -X POST -H "Authorization: Bearer eyJhbGciOiJIU
 
 ### 查询单个用户
 ```bash
-curl "http://localhost:3000/users?id=2" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoieGlueGluIiwiaWF0IjoxNzA1NTg3OTMxLCJleHAiOjE3MDU1ODg1MzF9.4MgcAnPjJ-NypWMQuLEdBeNoceduXeSQDKPfYt5iVm4"
+curl "http://localhost:3000/users?id=2" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoieGlueGluIiwiaWF0IjoxNzA1NTg5MDYyLCJleHAiOjE3MDU1ODk2NjJ9.E2LsOJ65Lt4BssFJUm9M8PYCaDMC5wgOfedvkoUDDjM"
 ```
 
 ### 查询所有账户
