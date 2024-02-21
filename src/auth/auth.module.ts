@@ -16,13 +16,7 @@ import { jwtConstants } from './constants';
       signOptions: { expiresIn: '600s' },
     }),
   ],
-  providers: [
-    AuthService,
-    {
-      provide: APP_GUARD,
-      useClass: AuthGuard,
-    },
-  ],
+  providers: [AuthService],
   controllers: [AuthController],
   exports: [AuthService],
 })

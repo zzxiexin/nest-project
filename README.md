@@ -19,7 +19,9 @@ $ pnpm run start:prod
 
 ### docker 运行数据库
 ```bash
-docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=test -d mysql:latest  
+docker run -p 3306:3306 --name mysql -e MYSQL_ROOT_PASSWORD=test -d mysql:latest
+
+create database xxx;
 
 mysql -u root -p   
 
@@ -27,9 +29,11 @@ show databases;
 
 use databases;   
 
-show tables;   
+show tables;  
 
-select * from table_name;   
+insert into tableName(name, password, createdAt, updatedAt) values ('test', 'test', '2023-02-20', '2023-02-20');
+
+select * from tableName;   
 ```
 
 ### 用户登陆
@@ -49,7 +53,7 @@ curl "http://localhost:3000/users?id=2" -H "Authorization: Bearer eyJhbGciOiJIUz
 
 ### 查询所有账户
 ```bash
-curl "http://localhost:3000/users" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoieGlueGluIiwiaWF0IjoxNzA1NTg2MDUyLCJleHAiOjE3MDU1ODY2NTJ9.GRdsJWzITMqso1HCkn7SeG52MfUVLLiLr8fhwV3UvMg"
+curl "http://localhost:3000/users" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoieGlueGluIiwiaWF0IjoxNzA4NTI1MzI4LCJleHAiOjE3MDg1MjU5Mjh9.zq7fo4WFNDcSlq8XsaANo6fiG70P4GEZ0XuPMuXxB30"
 ```
 
 ### 删除某个账户
